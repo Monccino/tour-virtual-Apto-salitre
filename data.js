@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-entrada-cuartos",
-      "name": "entrada cuartos",
+      "id": "0-entrada-apto",
+      "name": "entrada apto",
       "levels": [
         {
           "tileSize": 256,
@@ -16,11 +16,24 @@ var APP_DATA = {
       ],
       "faceSize": 375,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -3.0716588110263814,
+        "pitch": 0.3360646892671184,
+        "fov": 1.3365466929232486
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 2.727948108209521,
+          "pitch": 0.8313322640411513,
+          "rotation": 0,
+          "target": "10-comedor"
+        },
+        {
+          "yaw": -0.13572854230748277,
+          "pitch": 0.4683137179865575,
+          "rotation": 5.497787143782138,
+          "target": "11-cocina"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -366,49 +379,13 @@ var APP_DATA = {
           "yaw": -2.506683735410917,
           "pitch": 0.45619107670624537,
           "rotation": 0,
-          "target": "11-entrada-apto"
+          "target": "0-entrada-apto"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "11-entrada-apto",
-      "name": "entrada apto",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        }
-      ],
-      "faceSize": 375,
-      "initialViewParameters": {
-        "yaw": -3.0716588110263814,
-        "pitch": 0.3360646892671184,
-        "fov": 1.3365466929232486
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.727948108209521,
-          "pitch": 0.8313322640411513,
-          "rotation": 0,
-          "target": "10-comedor"
-        },
-        {
-          "yaw": -0.13572854230748277,
-          "pitch": 0.4683137179865575,
-          "rotation": 5.497787143782138,
-          "target": "12-cocina"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "12-cocina",
+      "id": "11-cocina",
       "name": "cocina",
       "levels": [
         {
@@ -432,7 +409,7 @@ var APP_DATA = {
           "yaw": 2.0259129699207925,
           "pitch": 0.5994560880084006,
           "rotation": 0.7853981633974483,
-          "target": "11-entrada-apto"
+          "target": "0-entrada-apto"
         }
       ],
       "infoHotspots": []
